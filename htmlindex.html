@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><!-- InstanceBegin template="Templates/Left Sidebar Pure Lindy.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<?php 
+include 'dbc.php';
+?>
+<title>Pure Lindy - Offering Lindy Hop (AKA Swing Dancing or Jitterbug) in the North West (Lancaster, Preston, Manchester)</title>
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<!-- InstanceEndEditable -->
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript" src="js/supersubs.js"></script>
+<script type="text/javascript"> 
+    $(document).ready(function(){ 
+        $("ul.sf-menu").supersubs({ 
+            minWidth:    12,   // minimum width of sub-menus in em units 
+            maxWidth:    27,   // maximum width of sub-menus in em units 
+            extraWidth:  1     // extra width can ensure lines don't sometimes turn over 
+                               // due to slight rounding differences and font-family 
+        }).superfish();  // call supersubs first, then superfish, so that subs are 
+                         // not display:none when measuring. Call before initialising 
+                         // containing tabs for same reason. 
+		
+    }); 
+</script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<br />
+<div id="header" class="container_12"> <a href="#"><img src="images/Web-logo-with-us.png" alt="Logo"/></a> 
+<div class="headerlinks">
+    <p><strong>Sian and Julian's Lindy Hop adventure!</strong></p>
+</div>
+</div>
+<div id="nav" class="container_12 rounded">
+  <ul class="sf-menu">
+    <li class="first-item"> <a href="index.php" style="border-left:none;">Home</a> </li>
+    <li> <a href="#">What is Lindy Hop?</a>
+      <ul>
+        <li> <a href="What-is-Lindy.php">About Lindy Hop</a> </li>
+        <li class="current"> <a href="#ab">The Current Scene</a>
+          <ul>
+            <li><a href="Events.php">Events</a></li>
+            <li><a href="Weddings.php">Weddings</a></li>
+            <li><a href="Music.php">Music</a></li>
+          </ul>
+        </li>          
+      </ul>
+    </li>
+    <li> <a href="#">What We Do</a>
+      <ul>
+        <li> <a href="Private-Lessons.php">Private Lessons</a> </li>
+        <li> <a href="Workshops.php">Workshops</a> </li>
+        <li> <a href="Weekly-Classes-Social.php">Weekly Classes/Socials</a> </li>
+        <li> <a href="Weddings.php">Weddings</a> </li>
+        <li> <a href="Corporate-Entertainment.php">Corporate/Entertainment</a> </li>
+        <li> <a href="School-College.php">Schools/Colleges</a> </li>
+        <li class="current"> <a href="#af">About Us</a>
+          <ul>
+            <li><a href="Sian and Julian.php">Sian and Julian</a></li>
+            </ul>
+        </li>
+      </ul>
+    </li>
+    <li> <a href="Calendar.php">Calendar</a></li>
+    <li> <a href="Links.php">Useful Links</a></li>
+    <li> <a href="Contact-us.php">Contact Us</a> </li>
+    <li> <a href="login.php">Log in</a></li>
+        
+    <?php
+	if (isset($_SESSION['user_id'])) {
+	?>
+        <li><a href="myaccount.php">My Account</a>
+        <li><a href="mysettings.php">Settings</a>
+        <li><a href="logout.php">Logout </a>
+    <?php }
+    if (checkAdmin()) {
+    ?>
+        <li><a href="admin.php">Admin</a>
+	<?php } ?>
+  </ul>
+</div>
+<div id="content" class="container_12 rounded">
+  <div class="grid_9 push_3"><!-- InstanceBeginEditable name="MainContent" -->
+    <h1>Welcome to Pure Lindy</h1>
+    <p><img src="images/Lindy Hop-3.JPG" align="right" width="325" height="270" alt="Sian and Julian dancing pic" />
+    <h2>Latest News</h2>
+    <p><a href="login.php">CMS Login</a></p>
+    <p>The bad news is that, for various reasons, the Pure Lindy weekly Lindy Hop classes on Wednesday's at the Dalton Rooms in Lancaster have finished as of 22/06/11.</p>
+    <p>The good news is that  weekly Lindy Hop classes are continuing at <a class="hilite" href="http://www.ybdclub.com/" target="_blank">MACs</a> on Friargate in Preston every Thursday.</p>
+    <p>See <a class="hilite" href="http://purelindy.com/Weekly-Classes-Social.html">Weekly Classes/Social</a> page for more details.</p>
+    <p>See <a class="hilite" href="http://purelindy.com/Workshops.html">Workshops</a> page for details of new Beginner, Improver and Intermediate level workshops in Manchester.</p>
+    <p>&nbsp;</p>
+    <h2>Introduction to Pure Lindy</h2>
+    <p>Pure Lindy is  the next step in Sian and Julian's Lindy Hop adventure.    <br />
+    </p>
+    <p>Working predominantly in Manchester and the North West we offer  private Lindy Hop tuition sessions where we can help you develop great lead and follow  technique to help you dance confidently on the social dance floor with any  partner. </p>
+    <p>If you are interested in learning or improving your Lindy Hop dancing  please contact us and we'll set up a meeting to a discuss your needs. </p>
+    <p>We can  analyse your current level and devise a personalised class or programme of  classes tailored to your specific requirements. <br />
+    </p>
+    <p>We also offer  the following:<br /></p>
+    <UL>
+	<LI>corporate  packages for team building
+	<LI>performances and  demonstrations
+	<LI>learning  packages suitable for school or colleges targeting curriculum objectives
+	</LI>
+	</UL>
+<br />    
+<p>Please take a look around the various pages on our site. They're not all as fully populated as we eventually intend them to be but we couldn't wait to get the site up and running as soon as possible so please bear with us.</p>
+    <p>      Warm regards,<br />
+      Sian and Julian.  </p>
+  <!-- InstanceEndEditable --></div>
+
+  <div class="grid_3 pull_9">
+    <div class="sidebarbox">
+      <ul>
+        <li><a href="What-is-Lindy.php">What is Lindy Hop?</a></li>
+        <li><a href="Private-Lessons.php">Private Lessons</a></li>
+        <li><a href="Workshops.php">Workshops</a></li>
+        <li><a href="Events.php">Events</a></li>
+        <li><a href="Weekly-Classes-Social.php">Weekly Classes/Social</a></li>
+        <li><a href="Corporate-Entertainment.php">Corporate/Entertainment</a></li>
+        <li><a href="School-College.php">Schools/Colleges</a></li>
+        <li><a href="Weddings.php">Weddings</a></li>
+        <li><a href="Music.php">Music</a></li>        
+        <li><a href="Sian and Julian.php">About us - Sian and Julian</a></li>
+        <li><a href="Calendar.php">Pure Lindy Calendar</a></li>
+        <li><a href="Facebook.php">Pure Lindy on Facebook</a></li>
+        <li><a href="Links.php">Useful Links</a></li>        
+        <li><a href="Contact-us.php">Contact Us</a></li>
+        <li><a href="login.php">Log in</a></li>
+        
+    <?php
+	if (isset($_SESSION['user_id'])) {
+	?>
+        <li><a href="myaccount.php">My Account</a>
+        <li><a href="mysettings.php">Settings</a>
+        <li><a href="logout.php">Logout </a>
+    <?php }
+    if (checkAdmin()) {
+    ?>
+        <li><a href="admin.php">Admin CP </a>
+	<?php } ?>
+                
+      </ul>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+<div id="footer" class="container_12 topborder">
+  <div class="grid_6">Copyright &copy; 2011 www.purelindy.com</div>
+</div>
+<div id="credit" class="container_12">
+  <!-- The following link and credit cannot legally be altered or removed without a valid website license key purchased from http://www.justdreamweaver.com/templates/license.html. License keys are only $19.99 and once purchased you are free to remove or alter the link. -->
+  <div class="grid_12"><a href="http://www.justdreamweaver.com/dreamweaver-templates.html">Free Dreamweaver Templates</a> | <a href="http://www.justdreamweaver.com/cheap-web-hosting.html">Cheap Web Hosting</a></div>
+</div>
+</body>
+<!-- InstanceEnd --></html>
